@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GST Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>GST Calculator</h1>
+        <div class="input-group">
+            <label for="amount">Actual Amount:</label>
+            <input type="number" id="amount" required>
+        </div>
+        <div class="output-group">
+            <span>CGST:</span>
+            <span id="cgst">0</span>
+        </div>
+        <div class="output-group">
+            <span>SGST:</span>
+            <span id="sgst">0</span>
+        </div>
+        <div class="output-group">
+            <span>Total GST:</span>
+            <span id="total_gst">0</span>
+        </div>
+        <div class="output-group">
+            <span>Final Amount:</span>
+            <span id="final_amount">0</span>
+        </div>
+        <button onclick="calculateGST()">Calculate</button>
+    </div>
+      
+    
+    <script src="script.js"></script>
+</body>
+</html>
